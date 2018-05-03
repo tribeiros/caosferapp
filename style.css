@@ -1,0 +1,45 @@
+::-webkit-scrollbar {
+    display: none
+}
+
+body {
+	#background-image: url("data:image/gif;base64,R0lGODlhBAAEAKECABERESQkJP///////yH5BAEKAAIALAAAAAAEAAQAAAIFhB6nhlIAOw==");
+    background-repeat: repeat;
+    background-color: #1f2326;
+}
+
+body svg {
+    position: absolute;
+    top: calc(100% / 4);
+    left: calc(100% / 4);
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    /*margin: -250px 0 0 -250px;*/
+    -webkit-animation:chaos 0.5s linear infinite;
+    -moz-animation:chaos 0.5s linear infinite;
+    -o-animation:chaos 0.5s linear infinite;
+    animation:chaos 0.5s infinite linear ;
+}
+
+body svg:hover {
+    zoom:1.5
+    -webkit-animation:chaosn 0.5s linear infinite;
+    -moz-animation:chaosn 0.5s linear infinite;
+    -o-animation:chaosn 0.5s linear infinite;
+    animation:chaosn 0.5s infinite linear ;
+}
+
+
+body svg:hover path {
+    fill: #FFF000;
+    zoom:1.5
+}
+
+
+@keyframes chaos { 
+	100% {-webkit-transform: rotate(360deg); }
+}
+
+@keyframes chaosn { 
+	100% {-webkit-transform: rotate(-360deg); }
+}
