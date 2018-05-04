@@ -40,3 +40,10 @@ body svg:hover path {
     75% {background: #F07B3F;}
     100% {background: #FFD460;}    
 }
+
+#basic {
+    background: #1f2326;
+    border: 1px solid #fff;
+    animation:bg 0.5s infinite linear;
+    color: #fff;
+}
