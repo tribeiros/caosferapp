@@ -1,6 +1,20 @@
-function getData(){
-        shell.openExternal('https://github.com')
-    }
+var path = require('path');
+var options = [
+  {
+    title: "chaos Notification",
+    body: "xxx"
+  }
+]
 
-document.querySelector('#btnEd').addEventListener('click', getData)
+function doNotify(evt) {
+  if (evt.srcElement.id == "basic") {
+    new Notification(options[0].title, options[0]);
+  }
+  else if (evt.srcElement.id != "basic") {
+    new Notification(options[0].title, options[0]);
+  }
+}
 
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("basic").addEventListener("click", doNotify);
+})
