@@ -16,5 +16,5 @@ function doNotify(evt) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById("basic").addEventListener("click", doNotify);
+  document.getElementById("click").addEventListener("click", doNotify);
 })
