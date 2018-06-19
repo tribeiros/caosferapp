@@ -7,11 +7,11 @@ const shell = require('electron')
 
 let mainWindow
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 800, height: 600,fullscreen: false})
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
-    slashes: true
+    slashes: true,
   }))
 
   mainWindow.on('closed', function () {
